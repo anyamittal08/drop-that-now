@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4cc25;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #333;
+}
+
+.text {
+  font-weight: 200;
+  margin-bottom: 30px;
+}
+
+.flex-container {
+  min-height: 1px;
+  display: flex;
+  padding-right: 15px;
+  padding-left: 40px;
+  margin-top: 40px;
+}
+
+.flex-col {
+  flex: 50%;
+  display: block;
+  padding-top: 30px;
+}
+
+/* button styling */
+
+button {
+  padding: 9px 15px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  /* white-space: nowrap; */
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* background-image: none; */
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  border: 2px solid #383838;
+  background-color: transparent;
+  color: #383838;
+  outline: none;
+}
+
+button:hover,
+button:active,
+button:focus {
+  border-color: #00d181;
+  color: #00d181;
+  outline: none;
+}
+
+.btn-container {
+  float: right;
+}
+
+.add-btn {
+  margin-right: 10px;
+}
+
+.rmv-btn {
+  margin-right: 50px;
+}
+
+.number-bold {
+  font-weight: bold;
+}
+
+/* remove arrow from input type="number" fields
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* input styling */
+
+input {
+  height: 45px;
+  text-align: center;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 200;
+  color: inherit;
+}
+
+input[type="number"] {
+  width: 50px;
+}
+
+.desired-grade-input {
+  height: 55px;
+  width: 200px !important;
+}
+
+input:focus {
+  outline: none !important;
+  border-color: #00d181;
+}
+
+h1 {
+  font-family: inherit;
+  font-weight: 500 !important;
+}
+
+.aced-it {
+  color: #00d181;
+}
+
+.drop-course {
+  color: #d23e46;
+}
+
+.over-100 {
+  font-weight: bolder;
+}
+
+/* media queries for responsive design */
+
+@media (max-width: 480px) {
+  .flex-container {
+    display: block;
+  }
+}
+
+/* table styling */
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin-top: 40px;
+}
+
+table input {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.name-input {
+  font-weight: 500;
+}
+
+tr {
+  border-bottom: 1px solid #333;
+  padding-top: 5px;
+  padding-bottom: 7.5px;
+}
+
+th {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #333;
+  font-size: 14px;
+  text-align: left;
+}
+
+td {
+  padding-top: 7px;
+  padding-bottom: 12px;
+}
